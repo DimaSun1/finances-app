@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Venituri și Cheltuieli</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculator Venituri și Cheltuieli</h1>
+    <!-- Formular pentru introducerea datelor -->
+    <form id="form">
+      <input type="number" id="suma" placeholder="Introdu suma" required>
+      <input type="text" id="descriere" placeholder="Descriere (opțional)">
+      <select id="tip">
+        <option value="venit">Venit</option>
+        <option value="cheltuiala">Cheltuială</option>
+      </select>
+      <button type="submit">Adaugă</button>
+    </form>
+
+    <!-- Rezultatele -->
+    <h2>Rezultate</h2>
+    <ul id="lista-tranzactii"></ul>
+    <h3 id="rezultat-net">Venit Net: 0</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
